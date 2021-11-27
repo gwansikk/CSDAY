@@ -20,7 +20,7 @@ int main()
         int w, v;
 
         cin >> w >> v;
-        for (int j = w; j <= k; j++) {
+        for (int j = k; j >= w; j--) {
             dp[j] = max(dp[j], dp[j - w] + v);
         }
     }
