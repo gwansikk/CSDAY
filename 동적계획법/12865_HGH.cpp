@@ -1,3 +1,5 @@
+// 시간복잡도: n^2, 공간복잡도: 1
+
 #include <iostream>
 #include <vector>
 

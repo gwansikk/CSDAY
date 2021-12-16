@@ -1,3 +1,5 @@
+// 시간복잡도: n, 공간복잡도: n
+
 #include <stdio.h>
 
 int dp[41] = {0, 1};

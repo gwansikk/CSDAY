@@ -1,3 +1,5 @@
+// 시간복잡도: n, 공간복잡도: 1
+
 #include <stdio.h>
 
 int main() {

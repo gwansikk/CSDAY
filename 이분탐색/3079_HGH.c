@@ -1,3 +1,5 @@
+// 시간복잡도: logn, 공간복잡도: 1
+
 #include <stdio.h>
 #include <malloc.h>
 
