@@ -1,3 +1,5 @@
+// O(n^2) / O(1)
+
 #include <stdio.h>
 
 int DP[10001] = {1, };

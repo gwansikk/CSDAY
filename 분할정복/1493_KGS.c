@@ -1,4 +1,4 @@
-// 미완
+// 미완.
 
 #include <stdio.h>
 #include <math.h>

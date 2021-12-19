@@ -1,3 +1,5 @@
+// O(n^2) / O(1)
+
 #include <stdio.h>
 #define MAX(a,b)  (((a) > (b)) ? (a) : (b))
 #define MIN(a,b)  (((a) < (b)) ? (a) : (b))

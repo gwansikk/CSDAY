@@ -1,3 +1,5 @@
+// O(n) ?? / O(1)
+
 #include <stdio.h>
  
 int DP[41] = {0, 1, };

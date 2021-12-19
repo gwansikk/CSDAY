@@ -1,3 +1,5 @@
+// O(n)
+
 #include <stdio.h>
 
 int main(){
