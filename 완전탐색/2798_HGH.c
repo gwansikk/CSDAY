@@ -12,13 +12,11 @@ int main()
         scanf("%d", &a[i]);
     }
 
-    for (int i = 0; i < n - 2; i++) {
-        for (int j = 1; j < n - 1; j++) {
-            for (int k = 2; k < n; k++) {
-                if (i != j && j != k && k != i) {
-                    int t = a[i] + a[j] + a[k];
-                    if (t <= m && res < t) res = t;
-                }
+    for(int i = 0; i < n - 2; i++) {
+        for(int j = i + 1; j < n - 1; j++) {
+            for(int k = j + 1; k < n; k++) {
+                int t = a[i] + a[j] + a[k];
+                if (t <= m && res < t) res = t;
             }
         }
     }
