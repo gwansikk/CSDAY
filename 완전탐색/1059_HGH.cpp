@@ -42,7 +42,7 @@ int main()
     }
 
     if (flag) cout << (n - s) * (e - n + 1) + (e - n) << "\n";
-    else cout << 0 << "\n";
+    else cout << "0" << "\n";
 
     return 0;
 }
