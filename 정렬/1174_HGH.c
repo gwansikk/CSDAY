@@ -56,7 +56,6 @@ int end(char const *src, int len)
 
 void solve(long long x)
 {
-    printf("cnt: %d, d: %lld\n", cnt, d);
     char cd[11], copy[11];
     int idx, len;
 
@@ -75,7 +74,9 @@ void solve(long long x)
     /* 문자열 정렬 전과 후를 대조 */
     // 줄어드는 수일 경우
     if (!(idx = detect(cd, copy))) {
+        printf("cnt: %d, d: %lld\n", cnt, d);
         cnt++;
+        
         // 마지막 수일 경우 자릿수를 1개 늘림(ex. 9 -> 10)
         if (end(cd, len)) {
             cd[0] = '1';
