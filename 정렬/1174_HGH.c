@@ -3,9 +3,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+//#include <limits.h>
 
 int n, cnt = 0;
-long long d = 0;
+long long d = 0, res;
+
+// char* lltoa(long long val, int base){
+
+//     static char buf[64] = {0};
+
+//     int i = 62;
+//     int sign = (val < 0);
+//     if(sign) val = -val;
+
+//     if(val == 0) return "0";
+
+//     for(; val && i ; --i, val /= base) {
+//         buf[i] = "0123456789abcdef"[val % base];
+//     }
+
+//     if(sign) {
+//         buf[i--] = '-';
+//     }
+//     return &buf[i+1];
+
+// }
 
 // qsort 정렬기준(내림차순)
 int compare(const void *a, const void *b)
@@ -63,7 +85,8 @@ void solve(long long x)
     if (n == cnt) return;
 
     /* 숫자를 문자열로 변환 */
-    ltoa(x, cd, 10);
+    //ltoa(x, cd, 10);
+    lltoa(x, cd, 10);
     strcpy(copy, cd);
     len = strlen(cd);
     
@@ -74,8 +97,9 @@ void solve(long long x)
     /* 문자열 정렬 전과 후를 대조 */
     // 줄어드는 수일 경우
     if (!(idx = detect(cd, copy))) {
-        printf("cnt: %d, d: %lld\n", cnt, d);
         cnt++;
+        res = x;
+        printf("cnt: %d, d: %lld\n", cnt, d);
         
         // 마지막 수일 경우 자릿수를 1개 늘림(ex. 9 -> 10)
         if (end(cd, len)) {
@@ -101,7 +125,7 @@ int main()
 {
     scanf("%d", &n);
     solve(0);
-    printf("%lld\n", d);
+    printf("%lld\n", res);
 
     return 0;
 }
