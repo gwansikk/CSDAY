@@ -63,23 +63,3 @@ int main() {
     
     return 0;
 }
-
-// 내가 위에 짜둔 코드는 쓰레기다. 몇몇개 건질거만 건지고 나머진 싹 다 갈아엎어버려라. 젠장
-/* 일단 한번 짜본 코드
- 전제조건
- 1. 1~size까지의 배열을 만듬
- 2. 각 배열의 순서에 맞는 값을 해당 순서에 넣음 ex) arr[1] = 1, arr[2] = 2 ...
- 
- 좌로 이동시
- if(arr[i] < arr[num])
-    arr[i] = arr[i] + size - arr[num];
- else
-    arr[i] = arr[i] - arr[num]
- 
- 우로 이동시
-if(arr[i] > arr[num])
-    arr[i] = arr[i] - arr[num];
- else
-    arr[i] = arr[i] + size - arr[num];
- 
- */
