@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include "STACK_HGH.h"
 
-void StackInit(Stack *pstack)
+void StackInit(Stack *pstack, char type)
 {
+    pstack->type = type;
     pstack->head = NULL;
 }
 
@@ -36,7 +37,7 @@ Data Pop(Stack *pstack)
     }
 
     rNode = pstack->head;
-    rData = rNode->data;
+    rData = Peek(pstack);
 
     pstack->head = pstack->head->next;
     free(rNode);
@@ -50,16 +51,25 @@ Data Peek(Stack *pstack)
         perror("Stack is empty.\n");
         exit(-1);
     }
-
-    return pstack->head->data;
+    
+    if (pstack->type == CHAR) return (char*)pstack->head->data;
+    else if (pstack->type == INT) return (int*)pstack->head->data;
+    else if (pstack->type == FLOAT) return (float*)pstack->head->data;
+    else return (double*)pstack->head->data;
 }
 
 void PrintStack(Stack *pstack)
 {
     Node* node = pstack->head;
+    
+    if (IsEmpty(pstack)) return;
 
     while (1) {
-        printf("%d ", node->data);
+        if (pstack->type == CHAR) printf("%s ", (char*)node->data);
+        else if (pstack->type == INT) printf("%d ", (int*)node->data);
+        else if (pstack->type == FLOAT) printf("%f ", (float*)node->data);
+        else printf("%lf ", (double*)node->data);
+
         if (node->next == NULL) break;
         node = node->next;
     }

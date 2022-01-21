@@ -4,7 +4,14 @@
 #define TRUE 1
 #define FALSE 0
 
-typedef int Data;
+#define CHAR 0
+#define SHORT 1
+#define INT 1
+#define LONG 1
+#define FLOAT 2
+#define DOUBLE 3
+
+typedef void* Data;
 
 typedef struct node
 {
@@ -14,10 +21,11 @@ typedef struct node
 
 typedef struct
 {
+    char type;
     Node *head;
 } Stack;
 
-void StackInit(Stack *pstack);
+void StackInit(Stack *pstack, char type);
 int IsEmpty(Stack *pstack);
 void Push(Stack *pstack, Data data);
 Data Pop(Stack *pstack);
