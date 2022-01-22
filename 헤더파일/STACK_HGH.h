@@ -6,10 +6,10 @@
 
 #define CHAR 0
 #define SHORT 1
-#define INT 1
-#define LONG 1
-#define FLOAT 2
-#define DOUBLE 3
+#define INT 2
+#define LONG 2
+#define FLOAT 3
+#define DOUBLE 4
 
 typedef void* Data;
 

@@ -53,6 +53,7 @@ Data Peek(Stack *pstack)
     }
     
     if (pstack->type == CHAR) return (char*)pstack->head->data;
+    else if (pstack->type == SHORT) return (short*)pstack->head->data;
     else if (pstack->type == INT) return (int*)pstack->head->data;
     else if (pstack->type == FLOAT) return (float*)pstack->head->data;
     else return (double*)pstack->head->data;
@@ -66,6 +67,7 @@ void PrintStack(Stack *pstack)
 
     while (1) {
         if (pstack->type == CHAR) printf("%s ", (char*)node->data);
+        else if (pstack->type == SHORT) printf("%hd ", (short*)node->data);
         else if (pstack->type == INT) printf("%d ", (int*)node->data);
         else if (pstack->type == FLOAT) printf("%f ", (float*)node->data);
         else printf("%lf ", (double*)node->data);
@@ -74,4 +76,6 @@ void PrintStack(Stack *pstack)
         node = node->next;
     }
     putchar('\n');
+
+    free(node);
 }
