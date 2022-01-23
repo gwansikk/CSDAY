@@ -21,11 +21,11 @@ typedef struct node
 
 typedef struct
 {
-    char type;
+    char dataType;
     Node *head;
 } Stack;
 
-void StackInit(Stack *pstack, char type);
+void StackInit(Stack *pstack, char dataType);
 int IsEmpty(Stack *pstack);
 void Push(Stack *pstack, Data data);
 Data Pop(Stack *pstack);

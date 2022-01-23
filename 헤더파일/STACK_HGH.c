@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include "STACK_HGH.h"
 
-void StackInit(Stack *pstack, char type)
+void StackInit(Stack *pstack, char dataType)
 {
-    pstack->type = type;
+    pstack->dataType = dataType;
     pstack->head = NULL;
 }
 
@@ -52,10 +52,10 @@ Data Peek(Stack *pstack)
         exit(-1);
     }
     
-    if (pstack->type == CHAR) return (char*)pstack->head->data;
-    else if (pstack->type == SHORT) return (short*)pstack->head->data;
-    else if (pstack->type == INT) return (int*)pstack->head->data;
-    else if (pstack->type == FLOAT) return (float*)pstack->head->data;
+    if (pstack->dataType == CHAR) return (char*)pstack->head->data;
+    else if (pstack->dataType == SHORT) return (short*)pstack->head->data;
+    else if (pstack->dataType == INT) return (int*)pstack->head->data;
+    else if (pstack->dataType == FLOAT) return (float*)pstack->head->data;
     else return (double*)pstack->head->data;
 }
 
@@ -66,10 +66,10 @@ void PrintStack(Stack *pstack)
     if (IsEmpty(pstack)) return;
 
     while (1) {
-        if (pstack->type == CHAR) printf("%s ", (char*)&(node->data));
-        else if (pstack->type == SHORT) printf("%hd ", *(short*)&(node->data));
-        else if (pstack->type == INT) printf("%d ", *(int*)&(node->data));
-        else if (pstack->type == FLOAT) printf("%f ", *(float*)&(node->data));
+        if (pstack->dataType == CHAR) printf("%s ", (char*)&(node->data));
+        else if (pstack->dataType == SHORT) printf("%hd ", *(short*)&(node->data));
+        else if (pstack->dataType == INT) printf("%d ", *(int*)&(node->data));
+        else if (pstack->dataType == FLOAT) printf("%f ", *(float*)&(node->data));
         else printf("%lf ", *(double*)&(node->data));
 
         if (node->next == NULL) break;
