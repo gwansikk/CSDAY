@@ -66,11 +66,11 @@ void PrintStack(Stack *pstack)
     if (IsEmpty(pstack)) return;
 
     while (1) {
-        if (pstack->type == CHAR) printf("%s ", (char*)node->data);
-        else if (pstack->type == SHORT) printf("%hd ", (short*)node->data);
-        else if (pstack->type == INT) printf("%d ", (int*)node->data);
-        else if (pstack->type == FLOAT) printf("%f ", (float*)node->data);
-        else printf("%lf ", (double*)node->data);
+        if (pstack->type == CHAR) printf("%s ", (char*)&(node->data));
+        else if (pstack->type == SHORT) printf("%hd ", *(short*)&(node->data));
+        else if (pstack->type == INT) printf("%d ", *(int*)&(node->data));
+        else if (pstack->type == FLOAT) printf("%f ", *(float*)&(node->data));
+        else printf("%lf ", *(double*)&(node->data));
 
         if (node->next == NULL) break;
         node = node->next;

@@ -14,7 +14,7 @@ void printMenu();
 void inputData(Data *data);
 void printData(Data data);
 
-char dataType = CHAR;
+char dataType = FLOAT;
 
 int main()
 {
