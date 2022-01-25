@@ -4,7 +4,14 @@
 #define TRUE 1
 #define FALSE 0
 
-typedef int Data;
+#define CHAR 0
+#define SHORT 1
+#define INT 2
+#define LONG 2
+#define FLOAT 3
+#define DOUBLE 4
+
+typedef void* Data;
 
 typedef struct node
 {
@@ -14,11 +21,12 @@ typedef struct node
 
 typedef struct
 {
+    char dataType;
     Node *front;
     Node *rear;
 } Queue;
 
-void QueueInit(Queue *pqueue);
+void QueueInit(Queue *pqueuem, char dataType);
 int IsEmpty(Queue *pqueue);
 void Enqueue(Queue *pqueue, Data data);
 Data Dequeue(Queue *pqueue);
