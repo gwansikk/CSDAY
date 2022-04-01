@@ -1,28 +1,25 @@
-// 미완성
-
 #include <stdio.h>
 
-int dy[10001] = { 0, 1, 2 };
-
-int DFS(int n)
-{
-    if (n < 0)
-        return 0;
-
-    if (dy[n] != 0)
-        return dy[n];
-    else
-        return DFS(n - 1) + DFS(n - 2) + DFS(n - 3);
-}
+int dp[10001][4];
 
 int main()
 {
     int t, n;
 
+    dp[1][1] = 1;
+    dp[2][1] = dp[2][2] = 1;
+    dp[3][1] = dp[3][2] = dp[3][3] = 1;
+
+    for (int i = 4; i <= 10000; i++) {
+        dp[i][1] = dp[i - 1][1];
+        dp[i][2] = dp[i - 2][1] + dp[i - 2][2];
+        dp[i][3] = dp[i - 3][1] + dp[i - 3][2] + dp[i - 3][3];
+    }
+
     scanf("%d", &t);
-    for (int i = 0; i < t; i++) {
+    while (t--) {
         scanf("%d", &n);
-        printf("%d\n", DFS(n));
+        printf("%d\n", dp[n][1] + dp[n][2] + dp[n][3]);
     }
 
     return 0;
