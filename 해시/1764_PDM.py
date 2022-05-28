@@ -2,22 +2,16 @@ import sys
 input = sys.stdin.readline
 
 N, M = map(int, input().split())
-list = []
-result = []
 
+NList = set()
 for i in range(N):
-    list.append(input().strip())
-list.sort()
+    NList.add(input().strip())
 
+MList = set()
 for i in range(M):
-    name = input().strip()
-    for j in range(N):
-        if list[j] > name:
-            break
-        if list[j] == name:
-            result.append(name)
+    MList.add(input().strip())
 
-result.sort()
+result = sorted(NList & MList)
 
 print(len(result))
 for i in result:
