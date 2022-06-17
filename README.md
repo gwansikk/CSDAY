@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="200" src="http://material-bread.org/logo-shadow.svg"><br>
+    <img width="150" src="https://cdn-icons-png.flaticon.com/512/4499/4499734.png"><br>
     <b>AlgorithmDay</b><br>
     꿈꾸는 기업에 취업하는 그날까지, 코딩테스트에서 자주나오는 문제, 사람들이 가장많이 틀리는 유형으로 문제를 파악하고 학습합니다.
 </p>
@@ -30,3 +30,6 @@
 | 깊이/너비 우선 탐색   |      |       | 깊이/너비 우선 탐색을 이용하여 해법을 찾아봐요.      |
 | 이분탐색              |      |       | 이분탐색 기법을 사용하여 효율적으로 값을 찾아봐요.   |
 | 그래프                |      |       | 엣지를 통해 그래프의 노드를 탐험해봅시다.   |
+
+## Copyright and License
+<a href="https://www.flaticon.com/free-icons/qr-code" title="qr code icons">Qr code icons created by Freepik - Flaticon</a>
