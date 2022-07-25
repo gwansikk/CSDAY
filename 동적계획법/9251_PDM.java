@@ -1,10 +1,8 @@
-package Clear;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class PDM9251 {
+public class 9251_PDM {
     BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
 
     void run() throws IOException {
@@ -32,7 +30,7 @@ public class PDM9251 {
     }
 
     public static void main(String[] args) {
-        PDM9251 my = new PDM9251();
+        9251_PDM my = new 9251_PDM();
         try{
             my.run();
         }catch(Exception e){}
