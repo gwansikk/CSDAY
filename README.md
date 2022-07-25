@@ -12,7 +12,7 @@
 | 박동민 | 컴퓨터공학부 |[Github](https://github.com/chattymin)| 
 | 이찬영 | 컴퓨터공학부 |[Github](https://github.com/Lets-Gitit)|
 
-## 🌱 Curriculum
+## 🌱 History
 - 1기 - 2021.11.21 ~ 2022.05.22<br>
 - <strong>2기 - 2022.07.03 ~</strong><br>
 
@@ -30,5 +30,5 @@
 | 이분탐색              |2     |       | 이분탐색 기법을 사용하여 효율적으로 값을 찾아봐요.   |
 | 그래프                |1     |       | 엣지를 통해 그래프의 노드를 탐험해봐요!   |
 
-## 💡 Copyright and License
+## 💡 Copyright & License
 <a href="https://www.flaticon.com/free-icons/qr-code" title="qr code icons">Qr code icons created by Freepik - Flaticon</a>
