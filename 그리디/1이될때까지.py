@@ -1,6 +1,3 @@
-import imp
-
-
 import math
 
 N, K = map(int, input().split())
@@ -12,7 +9,7 @@ while N >= K:
     if(N % K != 0):
         N = N - 1;
         CalcNumber += 1
-    
+
     N = N / K;
     CalcNumber += 1
 
