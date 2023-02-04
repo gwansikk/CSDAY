@@ -13,7 +13,7 @@
 ## History
 
 - 시즌1 - 2021.11.21 ~ 2022.05.22<br>
-- <strong>시즌2 - 2022.07.03 ~</strong><br>
+- <strong>시즌2 - 2023.02.05 ~</strong><br>
 
 ## Curriculum
 
