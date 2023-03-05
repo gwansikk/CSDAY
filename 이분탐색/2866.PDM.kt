@@ -146,7 +146,7 @@ fun countLen(colTable: MutableList<String>, N: Int, C: Int): Int{
     var count = 0
 
     for (i in 1 .. N){
-        val tempSet = mutableSetOf<String>()
+        val tempSet = hasSetOf<String>()
         colTable.forEach{
             val temp = it.substring(i,N)
             tempSet.add(temp)
