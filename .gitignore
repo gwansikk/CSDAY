@@ -6,6 +6,15 @@
 *.exe
 *.txt
 
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 ### macOS ###
 # General
 .DS_Store
