@@ -23,5 +23,4 @@ int main() {
 
     DP[K][N] %= 1000000000;
     cout << DP[K][N];
-
 }

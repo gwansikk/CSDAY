@@ -33,7 +33,6 @@ int main() {
                 check = false;
                 break;
             }
-            // cout << i << " : " << tmp << endl;
         }
 
         if(check) {
@@ -42,7 +41,6 @@ int main() {
         else {
             end = mid - 1;
         }
-        // cout << "start : " << start << "\nend : " << end << "\nmid : " << mid << "\ncheck : " << check << "\n\n" << endl;
     }
 
     cout << start - 2;
