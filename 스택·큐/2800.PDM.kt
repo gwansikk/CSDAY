@@ -32,7 +32,7 @@ fun main() {
     bw.close()
 }
 
-fun findAll(chk: BooleanArray, idx: Int, cnt: Int, max: Int, input: String) {
+tailrec fun findAll(chk: BooleanArray, idx: Int, cnt: Int, max: Int, input: String) {
     if (cnt == 0) {
         getResult(chk, input)
         return
