@@ -3,12 +3,12 @@
 
 ## Members
 
-| 이름   | 학부      |
+| 이름   | 분야      |
 | ---- | --------- |
-| [김관식](https://github.com/gwansikk) | 컴퓨터공학부 |
-| [한관희](https://github.com/DevLime00) | 컴퓨터공학부 | 
-| [박동민](https://github.com/chattymin)  | 컴퓨터공학부 |
-| [이찬영](https://github.com/Lets-Gitit) | 컴퓨터공학부 | 
+| [김관식](https://github.com/gwansikk) | 풀스택 |
+| [한관희](https://github.com/DevLime00) | 백엔드 | 
+| [박동민](https://github.com/chattymin)  | 앱 |
+| [이찬영](https://github.com/Lets-Gitit) | 게임 | 
 
 ## Courses
 
@@ -28,4 +28,4 @@
 ## History
 
 - 시즌1 - 2021.11.21 ~ 2022.05.22  
-- <strong>시즌2 - 2023.02.05 ~</strong>
+- <strong>시즌2 - 2023.02.05 ~ 2023.04.09</strong>
