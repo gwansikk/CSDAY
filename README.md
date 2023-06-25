@@ -1,16 +1,7 @@
 # AlgorithmDay
-꿈꾸는 기업에 취업하는 그날까지, 코딩테스트에서 자주나오는 문제와 사람들이 가장많이 틀리는 유형으로 문제를 파악하고 학습합니다.
+다양한 알고리즘을 학습하고 공유합니다.  
 
-## Members
-
-| 이름   | 분야      |
-| ---- | --------- |
-| [김관식](https://github.com/gwansikk) | 풀스택 |
-| [한관희](https://github.com/DevLime00) | 백엔드 | 
-| [박동민](https://github.com/chattymin)  | 앱 |
-| [이찬영](https://github.com/Lets-Gitit) | 게임 | 
-
-## Courses
+## Theme
 
 | 주제                | 내용                                                                         |
 | ------------------ | --------------------------------------------------------------------------- |
@@ -25,7 +16,13 @@
 | 이분탐색             |   이분탐색 기법을 사용하여 효율적으로 값을 찾아봐요.                                     |
 | 그래프              |  엣지를 통해 그래프의 노드를 탐험해봐요!                                               |
 
-## History
+## Courses
 
 - 시즌1 - 2021.11.21 ~ 2022.05.22  
-- <strong>시즌2 - 2023.02.05 ~ 2023.04.09</strong>
+- 시즌2 - 2023.02.05 ~ 2023.04.09
+
+## Members
+
+|![김관식](https://avatars.githubusercontent.com/u/39869096?v=4)|![한관희](https://avatars.githubusercontent.com/u/85067003?v=4)|![박동민](https://avatars.githubusercontent.com/u/52882799?v=4)|![이찬영](https://avatars.githubusercontent.com/u/53773324?v=4)| 
+|:---------:|:---------:|:---------:|:---------:|
+|[김관식](https://github.com/gwansikk)|[한관희](https://github.com/DevLime00)|[박동민](https://github.com/chattymin)|[이찬영](https://github.com/Lets-Gitit)|
