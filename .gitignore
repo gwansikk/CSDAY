@@ -3,6 +3,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudio,visualstudiocode
 
 # 개인설정
+*.class
 *.exe
 *.txt
 
